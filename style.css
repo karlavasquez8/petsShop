@@ -5,32 +5,178 @@
     box-sizing: border-box;
 }
 
-.header-container-top {
-    background-color: #222222;
-    color: #f3f3f3;
-    font-weight: 400;
+:root {
+    --color-primary: rgba(243, 243, 243, 1);
+    --color-secondary: rgba(240, 168, 62, 1);
 }
 
-.header-container-botom {
-    background-color: #f0a83e;
-}
-
-.banner {
-    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
-    background-size: cover;
-    height: 409px;
+.flex-content {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
-.footer-top {
-    color: #ffffff;
-    background-color: #3c2313;
+.header-container {
+    justify-content: space-between;
+
+    padding-inline: 5rem;
+    background-color: #222222;
+    color: var(--color-primary);
+    font-size: 10px;
+    font-weight: 400;
 }
 
-.footer-bottom {
-    color: #ffffff;
+.nav,
+.list {
+    display: inline-flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+.nav li {
+    padding-inline: 2rem;
+}
+
+
+.color-nav {
+    height: 62px;
+    background-color: var(--color-secondary);
+}
+
+.banner {
+    background-image: url(./img/backgroundHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 409px;
+    justify-content: flex-end;
+}
+
+.banner-title {
+    background-color: var(--color-primary);
+    font-size: 30px;
+    height: 54px;
+    border-radius: 5px;
+
+}
+
+.container-banner {
+    padding: 2rem;
+}
+
+.btn-header {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-products {
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.products-menu {
+    color: #3C2313;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-card {
+    height: auto;
+    justify-content: space-evenly;
+    margin: 10%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    background-color: #FBFAF6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    flex-wrap: wrap;
+    height: auto;
+    padding: 2rem;
+}
+
+.form-contact form,
+.btn-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-input {
+    background-color: #3C2313;
+    border-radius: 10px;
+    border: none;
+    color: #FFF;
+    height: 3em;
+    padding: 10px;
+    width: 30%;
+    margin: 5px;
+}
+
+.btn-form {
+    flex-direction: row;
+}
+
+.btn-reset,
+.btn-send {
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    margin: 5px;
+    cursor: pointer
+}
+
+.btn-reset {
+    background-color: #8A8787;
+}
+
+.btn-send {
+    background-color: var(--color-secondary);
+}
+
+
+.subscription {
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.content-subscription {
+    justify-content: end;
+}
+
+
+
+.footer-icons {
+    color: var(--color-primary);
+    background-color: #3c2313;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+
+.icons-contacts {
+    padding: 0.5rem;
+
+}
+
+.text-contact {
+    margin-left: 1rem;
+}
+
+.footer-end {
+    color: var(--color-primary);
     background-color: #222222;
     text-align: center;
+    padding: 1rem;
 }

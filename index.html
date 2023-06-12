@@ -6,41 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <section class="header-container-top">
+        <section class="header-container flex-content">
             <p>Grandes ofertas en comederos</p>
-            <ul>
-                <li>Español</li>
-                <li>$ARG</li>
+            <ul class="list">
+                <li>Español
+                    <span class="material-symbols-outlined" loading="lazy">
+                        expand_more
+                    </span>
+                </li>
+                <li>$ARG
+                    <span class="material-symbols-outlined" loading="lazy">
+                        expand_more
+                    </span>
+                </li>
             </ul>
         </section>
-        <section class="header-container-botom">
-            <p class="logo-header">
-                <img src="" alt="cat">
-                <span class="logo-first"> Front</span>
-                "Cat&Dog"
-                <img src="" alt="Dog">
-            </p>
+        <section class=" flex-content header-container color-nav">
+            <div class="container-logo">
+                <img src="./img/icons/Logoheader.png" alt="Logo Page">
+            </div>
             <nav>
-                <ul class="nav-container">
+                <ul class="list nav">
                     <li>
-                        <img src="" alt="logo patita">
+                        <img src="./img/icons/logoPatita.png" alt="logo patita">
                         <span>Categorias</span>
                     </li>
                     <li>
-                        <img src="" alt="logo patita">
+                        <img src="./img/icons/logoPatita.png" alt="logo patita">
                         <span>Pets</span>
                     </li>
                     <li>
-                        <img src="" alt="logo patita">
+                        <img src="./img/icons/logoPatita.png" alt="logo patita">
                         <span>Nosotros</span>
                     </li>
                     <li>
-                        <img src="" alt="logo patita">
+                        <img src="./img/icons/logoPatita.png" alt="logo patita">
                         <span>Contactanos</span>
                     </li>
                 </ul>
@@ -49,73 +57,112 @@
     </header>
 
     <main>
-        <section class="banner">
+        <section class="flex-content banner ">
             <div class="container-banner">
                 <span class="banner-title">¡Es un placer tenerte aquí!</span>
                 <p>¡Comederos en descuento!</p>
-                <a href=""> Comederos</a>
-            </div>
-        </section>
-
-        <section class="products-nav">
-            <img src="./img/patita.png" alt="Imagen Patita">
-            <p>Productos Destacados</p>
-            <p class="opctions">
-                <span>Comederos</span>
-                <span>Accesorios</span>
-                <span>Comida</span>
-            </p>
-        </section>
-        <section class="products-menu">
-            <div>
-                <img src="./img/churrasquito.png" alt="Imagen Producto 1">
-                <p>Juguete Churrasquito</p>
-                <span>$150</span>
-            </div>
-            <div>
-                <img src="./img/comedero.png" alt="Imagen Producto 2">
-                <p>Comedero para perro</p>
-                <span>$250</span>
-            </div>
-            <div>
-                <img src="./img/Huesito.png" alt="Imagen Producto 3">
-                <p>Juguete de Huesito</p>
-                <span>$650</span>
-            </div>
-            <div>
+                <button class="btn-header"> Comederos</button>
 
             </div>
         </section>
+
+        <section class="products">
+            <div class="flex-content nav-products ">
+                <img src="./img/patita.png" alt="Imagen Patita">
+                <p>Productos Destacados</p>
+                <p>
+                    <span>Comederos</span>
+                    <span>Accesorios</span>
+                    <span>Comida</span>
+                </p>
+            </div>
+
+            <div class="flex-content container-card">
+                <div class="card">
+                    <img src="./img/churrasquito.png" alt="Imagen Producto 1">
+                    <p>Juguete Churrasquito</p>
+                    <span>$150</span>
+                </div>
+                <div class="card">
+                    <img src="./img/comedero.png" alt="Imagen Producto 2">
+                    <p>Comedero para perro</p>
+                    <span>$250</span>
+                </div>
+                <div class="card">
+                    <img src="./img/Huesito.png" alt="Imagen Producto 3">
+                    <p>Juguete de Huesito</p>
+                    <span>$650</span>
+                </div>
+
+            </div>
+            <div class=" form-contact">
+                <form>
+                    <h3>Contactanos</h3>
+                    <input type="name" name="name" id="name" placeholder="Nombre y Apellido" class="contact-input">
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo Electronico"
+                        class="contact-input">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Telefono" class="contact-input">
+                </form>
+                <div class=" flex-content btn-form">
+                    <button type="reset" class="btn-reset">Resetear</button>
+                    <button type="submit" class="btn-send">Enviar</button>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <section class="footer-top">
-            <p>
-                <img src="" alt="cat">
-                <span>Front</span>
-                "Cat&Dog"
-                <img src="" alt="dog">
-            </p>
-            <div>
-                <img src="" alt="ubicacion">
-                <p>Localidad</p>
-                <span>Calle-Provincia</span>
+        <section class="flex-content subscription">
+            <div class="flex-content content-subscription">
+                <img src="./img/icons/logoSuscrip.png" alt="">
+                <p>Suscribete para mas novedades</p>
             </div>
-            <div>
-                <img src="" alt="telefono">
-                <p>telefono</p>
-                <span>Numero de telefono</span>
-            </div>
-            <div>
-                <img src="" alt="telefono">
-                <p>Correo Electronico</p>
-                <span>Direccion de correo</span>
-            </div>
-        </section>
-        <section class="footer-bottom">
-            <p>Todos los derechos reservados Front End</p>
-        </section>
 
+            <div class="content-subscription">
+                <form>
+                    <input type="email" class="email-subscription">
+                </form>
+                <button type="submit" class="btn-reset">Suscribirse</button>
+            </div>
+        </section>
+        <section class="flex-content footer-icons">
+            <div>
+                <div class="flex-content icons-contacts">
+                    <img class="icons " src="./img/icons/location.png" alt="ubicacion">
+                    <div class="text-contact">
+                        <p>Localidad</p>
+                        <span>Calle-Provincia</span>
+                    </div>
+
+                </div>
+                <div class=" flex-content icons-contacts">
+                    <img class=" icons" src="./img/icons/call.png" alt="telefono">
+                    <div class="text-contact">
+                        <p>telefono</p>
+                        <span>Numero de telefono</span>
+                    </div>
+
+                </div>
+                <div class=" flex-content icons-contacts">
+                    <img class="icons" src="./img/icons/message.png" alt="correo electronico">
+                    <div class="text-contact">
+                        <p>Correo Electronico</p>
+                        <span>Direccion de correo</span>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img src="./img/icons/logoPage.png" alt="Logo Page">
+            </div>
+
+
+        </section>
+        <section class="footer-end">
+            <p>&copy;Todos los derechos reservados Front End</p>
+        </section>
     </footer>
 </body>
 
